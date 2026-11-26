@@ -16,24 +16,25 @@ module d_mem #(
     input         MemWrite,
     input         MemRead
 );
-    localparam ADDR_BITS = (MEM_WORDS <= 2) ? 1 : $clog2(MEM_WORDS);
     reg [31:0] mem [0:MEM_WORDS-1];
     wire [29:0] word_address = Address[31:2];
+    reg write_enable;
+    reg [29:0] write_address;
+    reg [31:0] write_data;
 
-    // Modelagem para simulacao: aguarda a propagacao combinacional de endereco
-e dado antes de gravar. Isso evita capturar valores transitorios quando
-    // instrucoes sw consecutivas atualizam o PC e o datapath na mesma unidade.
-    // RAMs fisicas usuais exigem escrita sincronizada; este modelo pode nao
-    // inferir bloco de RAM em FPGA.
+    // Publica os sinais juntos apos a propagacao combinacional, no mesmo
+    // instante simulado. O bloco continua sensivel a mudancas nas entradas.
     always @(MemWrite or Address or WriteData) begin
-        if (MemWrite) begin
-            #1;
-            if (MemWrite && (word_address < MEM_WORDS))
-                mem[Address[ADDR_BITS+1:2]] = WriteData;
-        end
+        {write_enable, write_address, write_data} <= {MemWrite, Address[31:2], WriteData};
+    end
+
+    // Escrita assincrona para simulacao, sem inferencia de RAM de bloco.
+    always @(write_enable or write_address or write_data) begin
+        if (write_enable && (write_address < MEM_WORDS))
+            mem[write_address] = write_data;
     end
 
     // Endereco de byte para palavra. Leituras fora da faixa retornam X.
     assign ReadData = !MemRead ? 32'bz :
-                      (word_address < MEM_WORDS) ? mem[Address[ADDR_BITS+1:2]] : 32'bx;
+                      (word_address < MEM_WORDS) ? mem[word_address] : 32'bx;
 endmodule

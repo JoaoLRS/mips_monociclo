@@ -7,325 +7,362 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/aliss/mips_monociclo/src
+dC:/Users/aliss/mips_monociclo/src
 vctrl
-Z1 !s110 1795673121
+!s110 1795697987
 !i10b 1
-!s100 _5?gFi[a`JT<Ei;ZO;P3k2
-IODPG=8?j1af6<;84njNbX2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z3 w1795666226
-8ctrl.v
-Fctrl.v
-L0 6
+!s100 iaAa_0jUjbD9oY6SSReYC1
+ISY0jhBA[ATaiA8zh[L;Zm1
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/projetos/mips_monociclo/src
+Z2 w1795696355
+8C:/projetos/mips_monociclo/src/ctrl.v
+FC:/projetos/mips_monociclo/src/ctrl.v
+Z3 L0 10
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1795673121.000000
-Z6 !s107 tb_isa.v|tb_mips.v|tb_ctrl.v|tb_ula.v|tb_d_mem.v|tb_regfile.v|tb_i_mem.v|tb_pc.v|mips.v|ctrl.v|ula_ctrl.v|ula.v|regfile.v|d_mem.v|i_mem.v|pc.v|
-Z7 !s90 -reportprogress|300|pc.v|i_mem.v|d_mem.v|regfile.v|ula.v|ula_ctrl.v|ctrl.v|mips.v|tb_pc.v|tb_i_mem.v|tb_regfile.v|tb_d_mem.v|tb_ula.v|tb_ctrl.v|tb_mips.v|tb_isa.v|
+!s108 1795697987.000000
+!s107 C:/projetos/mips_monociclo/src/ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/ctrl.v|
 !i113 1
-Z8 tCvgOpt 0
+Z5 o-work work
+Z6 tCvgOpt 0
 vd_mem
-R1
+Z7 !s110 1795697988
 !i10b 1
-!s100 ;<hgkd?M0>SJ`Wlg`[n:T0
-IY;]7d<W2Z<n8>mijZaP2[2
-R2
+!s100 FL[Ml5VeE5G6zH98e<iWQ2
+Iio33Em:L:79aR]9II5Y_?0
 R0
-Z9 w1795666907
-8d_mem.v
-Fd_mem.v
-L0 6
+R1
+w1795696926
+8C:/projetos/mips_monociclo/src/d_mem.v
+FC:/projetos/mips_monociclo/src/d_mem.v
+R3
 R4
 r1
 !s85 0
 31
+Z8 !s108 1795697988.000000
+!s107 C:/projetos/mips_monociclo/src/d_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/d_mem.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vi_mem
-R1
+R7
 !i10b 1
-!s100 3j2mEdTKlzf?89Xg=L<zQ3
-Io4YZ@_PX^Q<aiSJJRmGdi3
-R2
+!s100 ASdd2H4Y;z7LOKmJZcG;L2
+I_m6^EB@j0e_L?gnZPk]TU1
 R0
-w1795666921
-8i_mem.v
-Fi_mem.v
-L0 6
+R1
+R2
+8C:/projetos/mips_monociclo/src/i_mem.v
+FC:/projetos/mips_monociclo/src/i_mem.v
+R3
 R4
 r1
 !s85 0
 31
+R8
+!s107 C:/projetos/mips_monociclo/src/i_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/i_mem.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vmips
-R1
+R7
 !i10b 1
-!s100 a=G8h<L5f36zMH6a8LPOc0
-I3ZlRk?GN2DZgm4BGY@Go;1
-R2
+!s100 _X>lTz^09VaBmI;d00Tmn3
+I3==Gl9oJ9^Zn2;<=c^jWV3
 R0
-R9
-8mips.v
-Fmips.v
-L0 6
+R1
+R2
+8C:/projetos/mips_monociclo/src/mips.v
+FC:/projetos/mips_monociclo/src/mips.v
+R3
 R4
 r1
 !s85 0
 31
+R8
+!s107 C:/projetos/mips_monociclo/src/mips.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/mips.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vPC
-R1
+R7
 !i10b 1
-!s100 Q4?L`WRdf6ZbCjAgG[?o30
-I=TIL::XXV@`4hVB@0RRcU2
-R2
+!s100 2<6^zO16Mcg63[0SG97Cz3
+I2f`6ChD^K`fK:mad>VBY<1
 R0
-w1795666922
-8pc.v
-Fpc.v
-L0 6
+R1
+R2
+8C:/projetos/mips_monociclo/src/pc.v
+FC:/projetos/mips_monociclo/src/pc.v
+R3
 R4
 r1
 !s85 0
 31
+R8
+!s107 C:/projetos/mips_monociclo/src/pc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/pc.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 n@p@c
 vregfile
-R1
-!i10b 1
-!s100 `Y9If8@K1<@e;aM757em52
-I8mReFh?JYc[4WFYnEVT=c1
-R2
-R0
-w1795666923
-8regfile.v
-Fregfile.v
-L0 6
-R4
-r1
-!s85 0
-31
-R5
-R6
 R7
-!i113 1
-R8
-vtb_ctrl
-R1
 !i10b 1
-!s100 WNZP?2Cec>k`ihVli8:e`0
-I8a`PEN9B]dIKb7Y>O6CJF2
-R2
+!s100 EndRXmD[zYYWhdBIiQH8i1
+I6CYlNl[3AlR<>20?AT0eb3
 R0
+R1
+R2
+8C:/projetos/mips_monociclo/src/regfile.v
+FC:/projetos/mips_monociclo/src/regfile.v
 R3
-8tb_ctrl.v
-Ftb_ctrl.v
-L0 4
 R4
 r1
 !s85 0
 31
+R8
+!s107 C:/projetos/mips_monociclo/src/regfile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/regfile.v|
+!i113 1
 R5
 R6
+vtb_ctrl
 R7
-!i113 1
+!i10b 1
+!s100 nklRoigOCgIGOhf3]bPCN3
+I1<1AlnaBl;`JZQNPT=SJC2
+R0
+R1
+R2
+8C:/projetos/mips_monociclo/src/tb_ctrl.v
+FC:/projetos/mips_monociclo/src/tb_ctrl.v
+L0 9
+R4
+r1
+!s85 0
+31
 R8
+!s107 C:/projetos/mips_monociclo/src/tb_ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/tb_ctrl.v|
+!i113 1
+R5
+R6
 vtb_d_mem
-R1
+R7
 !i10b 1
-!s100 ^Mig;HfA^hD_DHDNLIXLW2
-Ib74CNY_bWkC@CY53o;TPl1
-R2
+!s100 DL>N9hKlF?KN01Lnnik:e0
+ISK2I5TF6M_2T2RRf]KTC`0
 R0
-w1795666965
-8tb_d_mem.v
-Ftb_d_mem.v
-L0 4
+R1
+w1795696963
+8C:/projetos/mips_monociclo/src/tb_d_mem.v
+FC:/projetos/mips_monociclo/src/tb_d_mem.v
+L0 9
 R4
 r1
 !s85 0
 31
+R8
+!s107 C:/projetos/mips_monociclo/src/tb_d_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/tb_d_mem.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vtb_i_mem
-R1
+R7
 !i10b 1
-!s100 TV6<@6JJeUeT82V@X^U]33
-I[WkdCIKSQl4eRIZ>G;=e83
-R2
+!s100 Jl0f]OoKoW@TNC7PbRbP^1
+I7cnKjCA[cDUJ1Y4<;fC=[3
 R0
-Z10 w1795666964
-8tb_i_mem.v
-Ftb_i_mem.v
-L0 4
+R1
+R2
+8C:/projetos/mips_monociclo/src/tb_i_mem.v
+FC:/projetos/mips_monociclo/src/tb_i_mem.v
+L0 9
 R4
 r1
 !s85 0
 31
+R8
+!s107 C:/projetos/mips_monociclo/src/tb_i_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/tb_i_mem.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vtb_isa
-R1
+R7
 !i10b 1
-!s100 hEa5k3HfB:Gm[SRQNl?d73
-I1=eI[j>LzL[5T0=h^;=ma1
-R2
+!s100 f<k0<><]Png^9^?ZZN>E50
+Ie[RI<64DWSBHdaHFeXU[20
 R0
-w1795667458
-8tb_isa.v
-Ftb_isa.v
-L0 4
+R1
+R2
+8C:/projetos/mips_monociclo/src/tb_isa.v
+FC:/projetos/mips_monociclo/src/tb_isa.v
+L0 9
 R4
 r1
 !s85 0
 31
+R8
+!s107 C:/projetos/mips_monociclo/src/tb_isa.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/tb_isa.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vtb_mips
-R1
+R7
 !i10b 1
-!s100 N5oo3F1`dSb1>36<?GVPg2
-IPgPbRAN1b;WDM=AGe<n>>3
-R2
+!s100 MF]8X:Le;QRT72=KZnUNL1
+I><PP0TJckAOE@=PM^I6nH2
 R0
-w1795669359
-8tb_mips.v
-Ftb_mips.v
-L0 4
+R1
+w1795696927
+8C:/projetos/mips_monociclo/src/tb_mips.v
+FC:/projetos/mips_monociclo/src/tb_mips.v
+L0 9
 R4
 r1
 !s85 0
 31
+R8
+!s107 C:/projetos/mips_monociclo/src/tb_mips.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/tb_mips.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vtb_pc
-R1
+Z9 !s110 1795697989
 !i10b 1
-!s100 C3gYfj@iP?oX77HUOnHgz0
-IN3I;jz4HFJXD@@>z`DI>C1
-R2
+!s100 kDgm;2XT:LPXP_>6?fWeW0
+IJ3oM[d_lb;7BH4I<V;RG81
 R0
-R10
-8tb_pc.v
-Ftb_pc.v
-L0 4
+R1
+R2
+8C:/projetos/mips_monociclo/src/tb_pc.v
+FC:/projetos/mips_monociclo/src/tb_pc.v
+L0 8
 R4
 r1
 !s85 0
 31
+R8
+!s107 C:/projetos/mips_monociclo/src/tb_pc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/tb_pc.v|
+!i113 1
 R5
 R6
-R7
+vtb_projeto2
+R9
+!i10b 1
+!s100 eUWjnGSG]NBjB`]ENbd9H2
+IZ3Ee?9>@hj7BQ3;992FXO2
+R0
+R1
+w1795696965
+8C:/projetos/mips_monociclo/src/tb_projeto2.v
+FC:/projetos/mips_monociclo/src/tb_projeto2.v
+L0 9
+R4
+r1
+!s85 0
+31
+Z10 !s108 1795697989.000000
+!s107 C:/projetos/mips_monociclo/src/tb_projeto2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/tb_projeto2.v|
 !i113 1
-R8
+R5
+R6
 vtb_regfile
-R1
+R9
 !i10b 1
-!s100 <TP0hU?izclTIELYVED=Y2
-IaMDFfMIBHDBhZ:WeLZSRM0
-R2
+!s100 R:_0G`4SkBzdLL7:zgogK0
+I>2JWS;9<c1fLXU>d2<QhL3
 R0
+R1
+R2
+8C:/projetos/mips_monociclo/src/tb_regfile.v
+FC:/projetos/mips_monociclo/src/tb_regfile.v
+L0 9
+R4
+r1
+!s85 0
+31
 R10
-8tb_regfile.v
-Ftb_regfile.v
-L0 4
-R4
-r1
-!s85 0
-31
+!s107 C:/projetos/mips_monociclo/src/tb_regfile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/tb_regfile.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vtb_ula
-R1
+R9
 !i10b 1
-!s100 eaI=]T1P6]J7iOHnK>^TS1
-I1VE:YJ6jMjScHShFijRlb3
-R2
+!s100 ?M;Y3hkkYoee6W@njB@^90
+IRiCh:9_@FHLd2Rkl0BWbU0
 R0
-w1795669352
-8tb_ula.v
-Ftb_ula.v
-L0 4
+R1
+R2
+8C:/projetos/mips_monociclo/src/tb_ula.v
+FC:/projetos/mips_monociclo/src/tb_ula.v
+L0 9
 R4
 r1
 !s85 0
 31
+R10
+!s107 C:/projetos/mips_monociclo/src/tb_ula.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/tb_ula.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vula
-R1
+R9
 !i10b 1
-!s100 _Z^Bjh>3ZR9]4mkKc@>DZ0
-I8h`b77h2?K4XNWi31clTh3
-R2
+!s100 aUd];YDbJ=8EIYo93Jz7_1
+InhOD28<dT?SXak7?]^]hV2
 R0
-w1795669337
-8ula.v
-Fula.v
-L0 6
+R1
+R2
+8C:/projetos/mips_monociclo/src/ula.v
+FC:/projetos/mips_monociclo/src/ula.v
+R3
 R4
 r1
 !s85 0
 31
+R10
+!s107 C:/projetos/mips_monociclo/src/ula.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/ula.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8
 vula_ctrl
-R1
+R9
 !i10b 1
-!s100 _bBGe[YPZSzPEHG2b<jT>3
-IY?<@=Uainm`XTg;kg?Abc3
-R2
+!s100 SS^@>iJ2?W3IXCP;S=Ec33
+IoIZz9c0_l<@5MTAfMl;jD2
 R0
-w1795669346
-8ula_ctrl.v
-Fula_ctrl.v
-L0 6
+R1
+R2
+8C:/projetos/mips_monociclo/src/ula_ctrl.v
+FC:/projetos/mips_monociclo/src/ula_ctrl.v
+R3
 R4
 r1
 !s85 0
 31
+R10
+!s107 C:/projetos/mips_monociclo/src/ula_ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/projetos/mips_monociclo/src/ula_ctrl.v|
+!i113 1
 R5
 R6
-R7
-!i113 1
-R8

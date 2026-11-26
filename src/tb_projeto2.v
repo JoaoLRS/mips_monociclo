@@ -9,8 +9,9 @@
 module tb_projeto2;
     reg clock, reset;
     wire [31:0] PC_out, ULA_out, DMem_out;
-    integer cycles, checks, errors;
-    mips #(.IMEM_FILE("instructions.list")) dut(
+    localparam DMEM_WORDS = 256;
+    integer cycles, checks, errors, word_index;
+    mips #(.IMEM_FILE("instructions.list"), .DMEM_WORDS(DMEM_WORDS)) dut(
         .clock(clock),.reset(reset),.PC_out(PC_out),.ULA_out(ULA_out),.DMem_out(DMem_out));
     always #5 clock=~clock;
 
@@ -29,7 +30,7 @@ module tb_projeto2;
     initial begin
         clock=0; reset=1; checks=0; errors=0; cycles=0;
         #2 reset=0;
-        // O programa salta para o rótulo exit após executar os sete grupos.
+        // O programa salta para o rotulo exit apos executar os sete grupos.
         for (cycles=0; cycles<100 && PC_out !== 32'd256; cycles=cycles+1) begin
             @(posedge clock); #1;
         end
@@ -54,6 +55,20 @@ module tb_projeto2;
         expect32(dut.data_memory.mem[4],32'd20,"RAM byte 16");
         expect32(dut.data_memory.mem[12],32'd30,"RAM byte 48");
         expect32(dut.data_memory.mem[13],32'd40,"RAM byte 52");
+        // Os quatro sw consecutivos nao devem gravar em outros enderecos.
+        for (word_index=0; word_index<DMEM_WORDS; word_index=word_index+1) begin
+            case (word_index)
+                3, 4, 12, 13: begin end // Conferidos acima.
+                default: begin
+                    checks=checks+1;
+                    if (dut.data_memory.mem[word_index] !== 32'bx) begin
+                        errors=errors+1;
+                        $display("FAIL escrita inesperada na RAM byte %0d: %h",
+                            4*word_index, dut.data_memory.mem[word_index]);
+                    end
+                end
+            endcase
+        end
         if (errors==0) $display("PASS tb_projeto2: %0d verificacoes em %0d ciclos",checks,cycles);
         else $display("FAIL tb_projeto2: %0d erros em %0d verificacoes",errors,checks);
         $finish;

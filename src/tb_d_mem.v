@@ -25,6 +25,20 @@ module tb_d_mem;
         if (read_data !== 32'bz) begin $display("FAIL MemRead=0 nao gerou Z: %h",read_data); errors=errors+1; end
         mem_read=1; address=4; #1;
         if (read_data !== 32'h87654321) begin $display("FAIL RAM reteve endereco 4: %h",read_data); errors=errors+1; end
+
+        // Duas escritas separadas por apenas 100 ps devem ser preservadas.
+        address=8; write_data=32'habcdef01; mem_write=1; #0.1;
+        address=12; write_data=32'habcdef02; #0.1;
+        mem_write=0;
+        if (read_data !== 32'habcdef02) begin $display("FAIL segunda escrita rapida: %h",read_data); errors=errors+1; end
+        address=8; #0.1;
+        if (read_data !== 32'habcdef01) begin $display("FAIL primeira escrita rapida: %h",read_data); errors=errors+1; end
+
+        // Um endereco fora da faixa nao deve alterar a palavra zero.
+        address=16; write_data=32'hdeadbeef; mem_write=1; #2;
+        if (read_data !== 32'bx) begin $display("FAIL leitura fora da faixa: %h",read_data); errors=errors+1; end
+        mem_write=0; address=0; #0.1;
+        if (read_data !== 32'h12345678) begin $display("FAIL escrita fora da faixa alterou palavra zero: %h",read_data); errors=errors+1; end
         if (errors==0) $display("PASS tb_d_mem"); else $display("FAIL tb_d_mem: %0d erros",errors);
         $finish;
     end
