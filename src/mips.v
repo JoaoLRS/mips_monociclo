@@ -10,7 +10,7 @@
 module mips #(
     parameter IMEM_WORDS = 256,
     parameter DMEM_WORDS = 256,
-    parameter IMEM_FILE = "instruction.list"
+    parameter IMEM_FILE = "instructions.list"
 ) (
     input         clock,
     input         reset,

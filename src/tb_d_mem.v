@@ -15,11 +15,11 @@ module tb_d_mem;
         .MemWrite(mem_write),.MemRead(mem_read));
     initial begin
         errors=0; address=0; write_data=0; mem_write=0; mem_read=1; #1;
-        write_data=32'h12345678; mem_write=1; #1;
+        write_data=32'h12345678; mem_write=1; #2;
         if (read_data !== 32'h12345678) begin $display("FAIL RAM escrita assincrona: %h",read_data); errors=errors+1; end
-        address=4; write_data=32'h87654321; #1;
+        address=4; write_data=32'h87654321; #2;
         if (read_data !== 32'h87654321) begin $display("FAIL RAM segundo endereco: %h",read_data); errors=errors+1; end
-        mem_write=0; address=0; write_data=32'hffffffff; #1;
+        mem_write=0; address=0; write_data=32'hffffffff; #2;
         if (read_data !== 32'h12345678) begin $display("FAIL MemWrite=0 alterou RAM: %h",read_data); errors=errors+1; end
         mem_read=0; #1;
         if (read_data !== 32'bz) begin $display("FAIL MemRead=0 nao gerou Z: %h",read_data); errors=errors+1; end

@@ -20,12 +20,17 @@ module d_mem #(
     reg [31:0] mem [0:MEM_WORDS-1];
     wire [29:0] word_address = Address[31:2];
 
-    // Modelagem para simulacao: grava quando qualquer entrada da escrita muda
-    // enquanto MemWrite=1. RAMs fisicas usuais exigem escrita sincronizada;
-    // esta descricao assincrona pode nao inferir bloco de RAM em FPGA.
-    always @(*) begin
-        if (MemWrite && (word_address < MEM_WORDS))
-            mem[Address[ADDR_BITS+1:2]] = WriteData;
+    // Modelagem para simulacao: aguarda a propagacao combinacional de endereco
+e dado antes de gravar. Isso evita capturar valores transitorios quando
+    // instrucoes sw consecutivas atualizam o PC e o datapath na mesma unidade.
+    // RAMs fisicas usuais exigem escrita sincronizada; este modelo pode nao
+    // inferir bloco de RAM em FPGA.
+    always @(MemWrite or Address or WriteData) begin
+        if (MemWrite) begin
+            #1;
+            if (MemWrite && (word_address < MEM_WORDS))
+                mem[Address[ADDR_BITS+1:2]] = WriteData;
+        end
     end
 
     // Endereco de byte para palavra. Leituras fora da faixa retornam X.

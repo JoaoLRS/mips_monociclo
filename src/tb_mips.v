@@ -10,7 +10,7 @@ module tb_mips;
     reg clock, reset;
     wire [31:0] PC_out, ULA_out, DMem_out;
     integer checks, errors;
-    mips dut(.clock(clock), .reset(reset), .PC_out(PC_out),
+    mips #(.IMEM_FILE("instructions.list")) dut(.clock(clock), .reset(reset), .PC_out(PC_out),
              .ULA_out(ULA_out), .DMem_out(DMem_out));
     always #5 clock=~clock;
 

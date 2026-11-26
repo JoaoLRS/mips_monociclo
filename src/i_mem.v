@@ -9,7 +9,7 @@
 
 module i_mem #(
     parameter MEM_WORDS = 256,
-    parameter INIT_FILE = "instruction.list"
+    parameter INIT_FILE = "instructions.list"
 ) (
     input  [31:0] address,
     output [31:0] i_out
