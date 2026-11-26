@@ -1,0 +1,17 @@
+# vsim -c work.tb_mips -do "run -all; quit -f" 
+# Start time: 00:28:25 on Nov 26,2026
+# Loading work.tb_mips
+# Loading work.mips
+# Loading work.PC
+# Loading work.i_mem
+# Loading work.ctrl
+# Loading work.regfile
+# Loading work.ula_ctrl
+# Loading work.ula
+# Loading work.d_mem
+# run -all
+# PASS tb_mips: 15 verificacoes (memoria provisoria)
+# ** Note: $finish    : tb_mips.v(51)
+#    Time: 66 ns  Iteration: 0  Instance: /tb_mips
+# End time: 00:28:25 on Nov 26,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

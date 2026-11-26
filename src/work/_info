@@ -1,0 +1,231 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/projetos/mips_monociclo/plano/MIPS_Monociclo
+vctrl
+Z0 !s110 1795663703
+!i10b 1
+!s100 _5?gFi[a`JT<Ei;ZO;P3k2
+IODPG=8?j1af6<;84njNbX2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/projetos/mips_monociclo/src
+w1795662393
+8ctrl.v
+Fctrl.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1795663703.000000
+Z5 !s107 tb_mips.v|tb_ctrl.v|tb_ula.v|mips.v|ctrl.v|ula_ctrl.v|ula.v|regfile.v|d_mem.v|i_mem.v|pc.v|
+Z6 !s90 pc.v|i_mem.v|d_mem.v|regfile.v|ula.v|ula_ctrl.v|ctrl.v|mips.v|tb_ula.v|tb_ctrl.v|tb_mips.v|
+!i113 1
+Z7 tCvgOpt 0
+vd_mem
+R0
+!i10b 1
+!s100 :IknSk8:USh2QZJ^V56=H3
+I_Y3BYTjgRB=C2GoV^eIhK3
+R1
+R2
+Z8 w1795633923
+8d_mem.v
+Fd_mem.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vi_mem
+R0
+!i10b 1
+!s100 O`HQZZg[hPA`0Pk:PYmfe3
+IFzU;CQnzmSanRk5aagG_H1
+R1
+R2
+R8
+8i_mem.v
+Fi_mem.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vmips
+R0
+!i10b 1
+!s100 ]EMfE8IQLUFfDa9=1Af_W1
+Ic:?9IRG6l`22_3_m7GCOW3
+R1
+R2
+w1795662488
+8mips.v
+Fmips.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vPC
+R0
+!i10b 1
+!s100 cGNXkI?lMTh^b1fmG8^=d0
+I?gB^M0BXJ==F33n2DDTim2
+R1
+R2
+R8
+8pc.v
+Fpc.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+n@p@c
+vregfile
+R0
+!i10b 1
+!s100 iJkakj8Q9<fRTIA74mPzN3
+I`D`Z`Q0F;:jlazR6O15jT2
+R1
+R2
+w1795633924
+8regfile.v
+Fregfile.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vtb_ctrl
+R0
+!i10b 1
+!s100 WNZP?2Cec>k`ihVli8:e`0
+I8a`PEN9B]dIKb7Y>O6CJF2
+R1
+R2
+w1795662445
+8tb_ctrl.v
+Ftb_ctrl.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vtb_mips
+R0
+!i10b 1
+!s100 ?gHZ;D[iK=0;CPJ68PZP90
+I=H3fzJ6GM?Ra[0G>N<=hO1
+R1
+R2
+w1795662469
+8tb_mips.v
+Ftb_mips.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vtb_ula
+R0
+!i10b 1
+!s100 ]h`2M;X;1nk5Qc4ZCQ8Y?0
+IY]lVVQHWgzTWgBKS0P4Tn3
+R1
+R2
+w1795662444
+8tb_ula.v
+Ftb_ula.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vula
+R0
+!i10b 1
+!s100 _Z^Bjh>3ZR9]4mkKc@>DZ0
+I8h`b77h2?K4XNWi31clTh3
+R1
+R2
+w1795662396
+8ula.v
+Fula.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
+vula_ctrl
+R0
+!i10b 1
+!s100 _bBGe[YPZSzPEHG2b<jT>3
+IY?<@=Uainm`XTg;kg?Abc3
+R1
+R2
+w1795662397
+8ula_ctrl.v
+Fula_ctrl.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+R5
+R6
+!i113 1
+R7
