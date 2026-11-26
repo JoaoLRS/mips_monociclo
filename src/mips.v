@@ -1,6 +1,10 @@
-// Grupo: Joao e Alisson | Projeto 02: MIPS monociclo em Verilog
-// Disciplina: Arquitetura e Organização de Computadores | Semestre: preencher
-// Questão: nucleo MIPS | Integra datapath, memorias, ULA e controle.
+//==========================================================
+//Equipe: Alisson Xavier e Joao Lucas Ribeiro
+//Atividade: Projeto 02 - 2a VA
+//Disciplina: Arquitetura e Organizacao de Computadores
+//Semestre: 2026.2
+//Questao: nucleo MIPS | Integra datapath, memorias, ULA e controle.
+//========================================================== 
 `timescale 1ns/1ps
 
 module mips #(
@@ -65,8 +69,8 @@ module mips #(
             .result(alu_result), .Zero_flag(zero_flag));
 
     d_mem #(.MEM_WORDS(DMEM_WORDS)) data_memory(
-        .clock(clock), .Address(alu_result), .WriteData(read_data2),
-        .MemWrite(MemWrite), .MemRead(MemRead), .ReadData(mem_read_data)
+        .Address(alu_result), .WriteData(read_data2), .ReadData(mem_read_data),
+        .MemWrite(MemWrite), .MemRead(MemRead)
     );
 
     assign write_register = Jal ? 5'd31 : (RegDst ? instruction[15:11] : instruction[20:16]);

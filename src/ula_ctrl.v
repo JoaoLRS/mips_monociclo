@@ -1,6 +1,10 @@
-// Grupo: João e Alisson | Projeto 02: MIPS monociclo em Verilog
-// Disciplina: Arquitetura e Organização de Computadores | Semestre: preencher
-// Questao: controle da ULA | Converte ALUOp/funct para OP de 4 bits.
+//==========================================================
+//Equipe: Alisson Xavier e Joao Lucas Ribeiro
+//Atividade: Projeto 02 - 2a VA
+//Disciplina: Arquitetura e Organizacao de Computadores
+//Semestre: 2026.2
+//Questao: controle da ULA | Converte ALUOp/funct para OP de 4 bits.
+//==========================================================
 `timescale 1ns/1ps
 
 module ula_ctrl (

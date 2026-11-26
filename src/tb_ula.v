@@ -1,5 +1,10 @@
-// Grupo: João e Alisson | Projeto 02 | Disciplina: Arquitetura e Organização de Computadores
-// Semestre:  | Questão: teste da ULA e controle da ULA.
+//==========================================================
+//Equipe: Alisson Xavier e Joao Lucas Ribeiro
+//Atividade: Projeto 02 - 2a VA
+//Disciplina: Arquitetura e Organizacao de Computadores
+//Semestre: 2026.2
+//Questao: teste da ULA e controle da ULA.
+//========================================================== 
 `timescale 1ns/1ps
 module tb_ula;
     reg [31:0] a, b;
@@ -42,6 +47,12 @@ module tb_ula;
         check(4'hf,6'h04,32'd1,32'd0,1);
         check(4'hf,6'h06,32'h80000000,32'd1,32'h40000000);
         check(4'hf,6'h07,32'h80000000,32'd1,32'hc0000000);
+        check(4'hf,6'h00,32'h80000001,32'd0,32'h80000001); // shift 0
+        check(4'hf,6'h02,32'h80000001,32'd0,32'h80000001);
+        check(4'hf,6'h03,32'h80000001,32'd0,32'h80000001);
+        check(4'hf,6'h04,32'h80000001,32'd0,32'h80000001);
+        check(4'hf,6'h06,32'h80000001,32'd0,32'h80000001);
+        check(4'hf,6'h07,32'h80000001,32'd0,32'h80000001);
         check(4'h8,0,32'hffffffff,32'd1,0); // sltiu com imediato sinalizado
         check(4'h7,0,32'hffffffff,32'd1,1); // slti
         $display("PASS tb_ula: %0d verificacoes", checks);

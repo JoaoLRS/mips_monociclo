@@ -1,5 +1,10 @@
-// Grupo: Joao e Alisson | Projeto 02 | Disciplina: Arquitetura e Organização de Computadores
-// Semestre: preencher | Questao: teste da unidade de controle.
+//==========================================================
+//Equipe: Alisson Xavier e Joao Lucas Ribeiro
+//Atividade: Projeto 02 - 2a VA
+//Disciplina: Arquitetura e Organizacao de Computadores
+//Semestre: 2026.2
+//Questao: teste da unidade de controle.
+//========================================================== 
 `timescale 1ns/1ps
 module tb_ctrl;
     reg [5:0] opcode, funct;

@@ -1,5 +1,10 @@
-// Grupo: João e Alisson | Projeto 02 | Disciplina: Arquitetura e Organização de Computadores
-// Semestre: preencher | Questão: teste inicial do nucleo MIPS.
+//==========================================================
+//Equipe: Alisson Xavier e Joao Lucas Ribeiro
+//Atividade: Projeto 02 - 2a VA
+//Disciplina: Arquitetura e Organizacao de Computadores
+//Semestre: 2026.2
+//Questao: teste inicial do nucleo MIPS.
+//==========================================================
 `timescale 1ns/1ps
 module tb_mips;
     reg clock, reset;
@@ -36,17 +41,17 @@ module tb_mips;
         expect32(dut.registers.registers[3],15,"add $3");
         @(posedge clock); #1;
         expect32(PC_out,16,"PC apos sw");
-        expect32(dut.data_memory.mem[0],15,"sw memoria[0] provisoria");
+        expect32(dut.data_memory.mem[0],15,"sw memoria[0]");
         @(posedge clock); #1;
         expect32(PC_out,20,"PC apos lw");
-        expect32(dut.registers.registers[4],15,"lw $4 provisoria");
+        expect32(dut.registers.registers[4],15,"lw $4");
         @(posedge clock); #1;
         expect32(PC_out,28,"beq pula ori");
         expect32(dut.registers.registers[5],0,"ori foi pulada");
         @(posedge clock); #1;
         expect32(PC_out,0,"j retorna ao inicio");
         expect32(dut.registers.registers[0],0,"$zero permanece zero");
-        if (errors == 0) $display("PASS tb_mips: %0d verificacoes (memoria provisoria)", checks);
+        if (errors == 0) $display("PASS tb_mips: %0d verificacoes", checks);
         else $display("FAIL tb_mips: %0d erros em %0d verificacoes", errors, checks);
         $finish;
     end

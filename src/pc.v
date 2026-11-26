@@ -1,3 +1,10 @@
+//==========================================================
+//Equipe: Alisson Xavier e Joao Lucas Ribeiro
+//Atividade: Projeto 02 - 2a VA
+//Disciplina: Arquitetura e Organizacao de Computadores
+//Semestre: 2026.2
+//Questao: contador de programa | Atualiza para nextPC na borda positiva.
+//==========================================================
 `timescale 1ns/1ps
 
 module PC (
